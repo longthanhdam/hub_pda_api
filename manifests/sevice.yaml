@@ -8,8 +8,8 @@ spec:
     app: hub-pda-api-app  #  Pod choose Deployment label
   ports:
     - protocol: TCP
-      port: 4201           # Port extenal
-      targetPort: 4201    # Port in container
+      port: 80           # Port extenal
+      targetPort: 80    # Port in container
   type: LoadBalancer     # LoadBalancer provide IP address
 
 
