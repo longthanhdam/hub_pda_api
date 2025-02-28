@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: hub_pda_api-service
+  name: hub-pda-api-service
   namespace: default  # namespace the same deployement
 spec:
   selector:
-    app: hub_pda_api-app  #  Pod choose Deployment label
+    app: hub-pda-api-app  #  Pod choose Deployment label
   ports:
     - protocol: TCP
       port: 4201           # Port extenal

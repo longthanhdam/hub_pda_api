@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hub_pda_api-app
+  name: hub-pda-api-app
   namespace: default
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hub_pda_api-app
+      app: hub-pda-api-app
   template:
     metadata:
       labels:
-        app: hub_pda_api-app
+        app: hub-pda-api-app
     spec:
       containers:
-      - name: hub_pda_api-app
-        image: mmregistry-uat.mmvietnam.com:5000/my-app:latest
+      - name: hub-pda-api-app
+        image: mmregistry.mmvietnam.com:5000/hub_pda_api:latest
         ports:
         - containerPort: 4201
       imagePullSecrets:
